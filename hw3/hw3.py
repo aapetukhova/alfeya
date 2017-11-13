@@ -4,7 +4,7 @@ n=len(l)
 s=[]
 m=[]
 for i in range (0, n-1):
-    m=l[:i]
+    m=l[:i+1]
     s=l[i+1:]
     s.extend(m)
     t="".join(s)
