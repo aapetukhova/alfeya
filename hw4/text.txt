@@ -1,1 +1,34 @@
 most importantly love like it's the only thing you know at the end of the day all this means nothing this page where you're sitting your degree your job your money nothing even matters except love and human connection who you loved and how deeply you loved them how you touched the people around you and how much you gave them r u p i k a u r
+background-color: #dc3095;
+background-color: #75dc30;
+
+
+
+.contacts-title {
+  margin: 0;
+  margin-bottom: 75px;
+  background-color: #3030dc;
+  min-height: 50px;
+}
+.contacts-form {
+  float: left;
+  width: 620px;
+  background-color: #dcda30;
+}
+.contacts .container {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.contacts-instruction {
+ background-color: #dcda30;
+  float: right;
+  width: 320px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
