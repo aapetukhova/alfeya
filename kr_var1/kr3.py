@@ -11,8 +11,8 @@ for i in range (0, n-1):
         for line in f:
             word = line.split("\t")
             if listofl[i] == word[0]:
-                k +=1
+                k += 1
                 print (line.replace("\t", "-"))
-        if k == 0:
+        if k < n:
             print("No Language Found")
 
