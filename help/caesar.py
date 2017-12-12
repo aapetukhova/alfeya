@@ -1,16 +1,15 @@
 abc="abcdefghijklmnopqrstuvwxyz"
-bcd="bcdefghijklmnopqrstuvwxyza"
 a=list(abc)
-m=len(a)
-b=list(bcd)
-p=len(b)
 f=input()
 l=list(f)
 n=len(l)
-for i in range (0, n):
-    for j in range (0, m):
-        if l[i]==a[j]:
-            l[i]=b[j]
-            break
-l2="".join(l)
-print(l2)
+m=len(a)
+for i in range (0, n-1):
+    for j in range (0, m-1):
+        while l[i]!=a[j]:
+            j+=1
+        if j == m:
+            j=-1
+        l[i]=a[j+1]
+##l2=" ".join(l)
+##print(l2)
