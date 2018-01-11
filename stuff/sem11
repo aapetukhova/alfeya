@@ -1,0 +1,35 @@
+def f1():
+    return 1
+#nothing
+
+import f
+
+print (f.f1())
+
+#1
+#импортируется собственный random
+
+import random
+
+def random():
+    return 1
+
+print(random.random())
+
+
+#    print(random.random())
+#AttributeError: 'function' object has no attribute 'random'
+#не называть программы так же, как стандартные модули
+
+#импортирование модулей
+
+#random - случайное число от 0 до 1
+
+
+нижний регистр -  встроенная функция lower()
+
+tab - "\n"
+
+в строке 4 ячейки - 1 слово в исходном виде, 2,3,4 - анаграммы
+
+слова отдельно внутри массива, нижний регистр, без знаков препинания
