@@ -33,7 +33,6 @@ def adj():
         adjs = text6.split()
     return random.choice(adjs)
 def punctuation():
-    # эта функция возвращает случайный знак препинания из небольшого списка; у неё нет аргументов
     marks = [".", "?", "!", "..."]
     return random.choice(marks)
 def verse1():
@@ -49,7 +48,6 @@ def verse3():
 #например, "ein Fädchen atmet"
     return 'ein' + ' ' + noun('n') + ' ' + verb() + punctuation()
 def make_verse():
-    # эта функция выбирает случайный номер из 1,2,3 и возвращает соответствующую строчку
         return verse1() + '\n' + verse2() + '\n' +  verse3()
 
 
