@@ -20,6 +20,4 @@ def counter(words):
     return ed, y
 
 words = words_from_file('text.txt')
-ed_form, y_verbs = counter(words)
-print('Number of -ed forms: ',ed_form,'\n','Number of -y verbs: ',y_verbs)
-
+print('Number of -ed forms: ',counter(words)[0],'\n','Number of -y verbs: ',counter(words)[1])
