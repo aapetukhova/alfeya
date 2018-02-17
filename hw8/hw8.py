@@ -1,4 +1,4 @@
-#makes the dictionary of secret words and hints
+#makes a dictionary of secret words and hints
 def dict_maker(filename):
     d = {}
     with open (filename, encoding='utf-8') as f:
@@ -17,7 +17,7 @@ def rand_guess(d):
     key = random.choice(keys)
     return key
 
-#chooseы a random hint for a secret word
+#chooses a random hint for a secret word
 def rand_hint(key, d):
     value = random.choice(d[key])
     return value
