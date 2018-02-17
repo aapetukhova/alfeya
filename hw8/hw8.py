@@ -44,39 +44,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-##def rand_hint(keys):
-##    values = list(d.values())
-##    value = values
-##    return random.choice(value)                
-
-
-
-
-##dot_word('dof')
-
-##print(dot_word(rand_guess(d)[1]))
-
-##, ' ', ) 
-
-##def main():
-##    print('Insert your word')
-##    word = input("My word: ")
-##    if word == 'ya':
-##        print('ok')
-##    else:
-##        print('schlecht')
-##
