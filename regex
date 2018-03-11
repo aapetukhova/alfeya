@@ -1,0 +1,48 @@
+regular expressions
+The solution is to use Python’s raw string notation for regular expressions; backslashes are not handled in any special way in a string literal prefixed with 'r', so r"\n" is a two-character string containing '\' and 'n', while "\n" is a one-character string containing a newline. Regular expressions will often be written in Python code using this raw string notation.
+\d
+Matches any decimal digit; this is equivalent to the class [0-9].
+\D
+Matches any non-digit character; this is equivalent to the class [^0-9].
+\s
+Matches any whitespace character; this is equivalent to the class [ \t\n\r\f\v].
+\S
+Matches any non-whitespace character; this is equivalent to the class [^ \t\n\r\f\v].
+\w
+Matches any alphanumeric character; this is equivalent to the class [a-zA-Z0-9_].
+\W
+Matches any non-alphanumeric character; this is equivalent to the class [^a-zA-Z0-9_].
+Method/Attribute
+Purpose
+match()
+Determine if the RE matches at the beginning of the string.
+search()
+Scan through a string, looking for any location where this RE matches.
+findall()
+Find all substrings where the RE matches, and returns them as a list.
+finditer()
+Find all substrings where the RE matches, and returns them as an iterator.
+
+group()
+Return the string matched by the RE
+start()
+Return the starting position of the match
+end()
+Return the ending position of the match
+span()
+Return a tuple containing the (start, end) positions of the match
+
+В этом домашнем задании программа должна открывать файл с русским текстом в кодировке UTF-8 и распечатывать из него по одному разу все встретившиеся в нём (в зависимости от варианта): 
+формы глагола «выпить»
+прош выпил/а/о, выпили
+буд выпью, выпьешь, выпьет, выпьем, выпьют
+пов выпей(те)
+выпивший/ая/ее/ие + падежи
+выпитый/ая/ое +падежи
+выпит/а/о
+выпив
+выпить
+вып(и(т)|ь|е)(cя)
+
+вып(и|ь|ей)
+и - (в|т(а(я)?|ы(й|х|м(и)?))?|вш(ая|и(й|х|м(и)?)))

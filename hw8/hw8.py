@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #makes the dictionary of secret words and hints
+=======
+#makes a dictionary of secret words and hints
+>>>>>>> 9ae1cc81d4944a8e3673eb07f36016a55fc2758d
 def dict_maker(filename):
     d = {}
     with open (filename, encoding='utf-8') as f:
@@ -17,7 +21,7 @@ def rand_guess(d):
     key = random.choice(keys)
     return key
 
-#chooseы a random hint for a secret word
+#chooses a random hint for a secret word
 def rand_hint(key, d):
     value = random.choice(d[key])
     return value
@@ -44,39 +48,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-##def rand_hint(keys):
-##    values = list(d.values())
-##    value = values
-##    return random.choice(value)                
-
-
-
-
-##dot_word('dof')
-
-##print(dot_word(rand_guess(d)[1]))
-
-##, ' ', ) 
-
-##def main():
-##    print('Insert your word')
-##    word = input("My word: ")
-##    if word == 'ya':
-##        print('ok')
-##    else:
-##        print('schlecht')
-##
