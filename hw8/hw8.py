@@ -1,4 +1,4 @@
-#makes the dictionary of problems and hints
+#makes the dictionary of secret words and hints
 def dict_maker(filename):
     d = {}
     with open (filename, encoding='utf-8') as f:
