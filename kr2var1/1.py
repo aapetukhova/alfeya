@@ -27,11 +27,8 @@ def writing(filename, s, dictionary):
         f.write('Словарь:' + '\n')
         for key, value in dictionary.items():
             f.write(key +' ')
-            f.write(str(value) + '\n')
-        
+            f.write(str(value) + '\n')      
 
-        
-    
 def morph(lines):
     l = []
     for line in lines:
@@ -40,16 +37,6 @@ def morph(lines):
             l.append(res.group(1))
     dictionary = collections.Counter(l)
     return dictionary
-####    with open('output.xml', 'w', encoding='utf-8') as f:
-##    for key, value in dictionary.items():
-##            print(key, value)
-        
-    
-    
-    
-
-
-
 
 def main():
     x = header(reading())
