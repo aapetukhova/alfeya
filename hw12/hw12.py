@@ -4,11 +4,13 @@ import os
 import re
 
 def latin():
+    print('Все файлы и папки:')
     l = []
     file_list = os.listdir()
     for file in file_list:
-        r = re.search('[a-zA-Z]', file)
-        if r and os.path.isdir(file):
+        print(file)
+        r = re.search('^[a-zA-Z]+?', file)
+        if r and os.path.isfile(file):
             l.append(file)
     return l
 
@@ -18,7 +20,8 @@ def counter(spisok):
     
 def main():
     a = latin()
-    print('Найдено папок:', counter(a))
+    print('')
+    print('Найдено файлов:', counter(a))
     for file in a:
         print(file)
 
@@ -27,3 +30,4 @@ if __name__ == '__main__':
 
     
             
+#Функция ищет папки (кстати, надо было искать файлы), в которых ХОТЯ БЫ один латинский символ, а не все; нет вывода на экран списка всех папок и файлов
